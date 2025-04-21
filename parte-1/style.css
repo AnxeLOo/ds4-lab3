@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fafafa;
+}
+
+#openMenuBtn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  padding: 10px 15px;
+  background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slide-menu {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 280px;
+  height: 100%;
+  padding: 20px;
+  background: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  color: white;
+}
+
+.slide-menu.open {
+  left: 0;
+}
+
+#closeMenuBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#menuItemsContainer {
+  list-style: none;
+  padding: 60px 0 0;
+  margin: 0;
+}
+
+#menuItemsContainer li {
+  margin-bottom: 20px;
+}
+
+#menuItemsContainer li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+#menuItemsContainer li a:hover {
+  opacity: 0.7;
+}
